@@ -1,13 +1,13 @@
 services:
   postgres:
     image: pgvector/pgvector:pg17
-    container_name: postgres_rag
+    container_name: postgres_rag_desafio
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: rag
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
