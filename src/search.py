@@ -1,3 +1,14 @@
+import os
+from dotenv import load_dotenv
+
+from langchain_openai import OpenAIEmbeddings
+from langchain_postgres import PGVector
+
+load_dotenv()
+for k in ("OPENAI_API_KEY", "PGVECTOR_URL","PGVECTOR_COLLECTION"):
+    if not os.getenv(k):
+        raise RuntimeError(f"Environment variable {k} is not set")
+    
 PROMPT_TEMPLATE = """
 CONTEXTO:
 {contexto}
