@@ -203,16 +203,6 @@ docker-compose up -d
 - Integra com o módulo de busca
 - Trata erros e exceções graciosamente
 
-## 🎯 Próximos Passos
-
-Para melhorar o sistema, considere:
-
-1. **Interface Web**: Criar uma interface web usando Streamlit ou FastAPI
-2. **Múltiplos Documentos**: Suporte para ingestão de múltiplos PDFs
-3. **Filtros Avançados**: Busca por metadados (autor, data, etc.)
-4. **Cache**: Implementar cache para consultas frequentes
-5. **Monitoramento**: Adicionar logs e métricas de performance
-
 ## 📞 Suporte
 
 Se encontrar problemas não cobertos neste guia:
